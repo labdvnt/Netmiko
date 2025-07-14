@@ -30,7 +30,7 @@ def connect_to_device(device):
 def run_commands(connection, commands):
     results = {}
     for command in commands:
-        print(f"🔹 Sending command: {command}")
+        print(f"🔹 Executing command: {command}")
         try:
             output = connection.send_command(command, use_textfsm=True)
             results[command] = output
@@ -40,7 +40,7 @@ def run_commands(connection, commands):
 
 def write_report(outfile, device_ip, results):
     outfile.write(f"{'*' * 40}\n")
-    outfile.write(f"Connecting to the device: {device_ip}\n")
+    outfile.write(f"Connected to device: {device_ip}\n")
     for command, output in results.items():
         outfile.write(f"{command.center(80, '*')}\n")
         pretty_output = json.dumps(output, indent=2) if isinstance(output, (dict, list)) else str(output)
@@ -51,17 +51,17 @@ def main():
     commands_map = load_json_file('commands.json')
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"TumRapor_{timestamp}.txt"
+    filename = f"All-Devices-Report_{timestamp}.txt"
 
     with open(filename, 'w') as outfile:
         for device in devices:
             print(f"\n{'=' * 50}")
-            print(f"🔌 Connecting to device: {device['ip']}")
+            print(f"Connecting to device: {device['ip']}")
             connection = connect_to_device(device)
 
-            if isinstance(connection, str):  # connection bir hata mesajıysa
-                print(f"❌ {connection}")
-                outfile.write(f"❌ {connection}\n")
+            if isinstance(connection, str):  # if connection is an error message
+                print(f" {connection}")
+                outfile.write(f"{connection}\n")
                 continue
 
             device_type = device['model_type']
@@ -72,7 +72,7 @@ def main():
 
             connection.disconnect()
 
-    print(f"\n✅ Rapor başarıyla oluşturuldu: {filename}")
+    print(f"\n✅ Report successfully generated: {filename}")
 
 if __name__ == '__main__':
     main()

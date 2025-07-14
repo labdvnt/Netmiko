@@ -8,12 +8,12 @@ Connecting to the device: 10.103.171.68
     "release": "fc2",
     "rommon": "IOS-XE",
     "hostname": "LAB-CSR-1",
-    "uptime": "1 week, 4 hours, 14 minutes",
+    "uptime": "1 week, 4 hours, 18 minutes",
     "uptime_years": "",
     "uptime_weeks": "1",
     "uptime_days": "",
     "uptime_hours": "4",
-    "uptime_minutes": "14",
+    "uptime_minutes": "18",
     "reload_reason": "reload",
     "running_image": "packages.conf",
     "hardware": [
@@ -166,16 +166,16 @@ Connecting to the device: 10.103.171.68
     "bandwidth": "1000000 Kbit",
     "delay": "10 usec",
     "encapsulation": "ARPA",
-    "last_input": "00:00:02",
-    "last_output": "00:04:19",
+    "last_input": "00:00:11",
+    "last_output": "00:08:58",
     "last_output_hang": "never",
     "queue_strategy": "fifo",
     "input_rate": "1000",
     "output_rate": "1000",
     "input_pps": "1",
     "output_pps": "1",
-    "input_packets": "563574",
-    "output_packets": "7898",
+    "input_packets": "563835",
+    "output_packets": "8124",
     "runts": "0",
     "giants": "0",
     "input_errors": "0",
@@ -381,12 +381,12 @@ Connecting to the device: 10.103.171.62
     "release": "fc2",
     "rommon": "IOS-XE",
     "hostname": "CSR2",
-    "uptime": "1 week, 3 hours, 34 minutes",
+    "uptime": "1 week, 3 hours, 39 minutes",
     "uptime_years": "",
     "uptime_weeks": "1",
     "uptime_days": "",
     "uptime_hours": "3",
-    "uptime_minutes": "34",
+    "uptime_minutes": "39",
     "reload_reason": "reload",
     "running_image": "packages.conf",
     "hardware": [
@@ -519,16 +519,16 @@ Connecting to the device: 10.103.171.62
     "bandwidth": "1000000 Kbit",
     "delay": "10 usec",
     "encapsulation": "ARPA",
-    "last_input": "00:00:05",
-    "last_output": "00:01:08",
+    "last_input": "00:00:14",
+    "last_output": "00:05:47",
     "last_output_hang": "never",
     "queue_strategy": "fifo",
     "input_rate": "0",
     "output_rate": "0",
     "input_pps": "0",
     "output_pps": "0",
-    "input_packets": "559447",
-    "output_packets": "6232",
+    "input_packets": "559668",
+    "output_packets": "6409",
     "runts": "0",
     "giants": "0",
     "input_errors": "0",
@@ -540,7 +540,7 @@ Connecting to the device: 10.103.171.62
     "vlan_id": "",
     "vlan_id_inner": "",
     "vlan_id_outer": "",
-    "queue_size": "0",
+    "queue_size": "1",
     "queue_max": "375",
     "queue_drops": "0",
     "queue_flushes": "0",
@@ -764,12 +764,12 @@ Connecting to the device: 10.103.171.71
     "release": "fc2",
     "rommon": "Bootstrap",
     "hostname": "LAB-R1",
-    "uptime": "1 week, 4 hours, 17 minutes",
+    "uptime": "1 week, 4 hours, 21 minutes",
     "uptime_years": "",
     "uptime_weeks": "1",
     "uptime_days": "",
     "uptime_hours": "4",
-    "uptime_minutes": "17",
+    "uptime_minutes": "21",
     "reload_reason": "Unknown reason",
     "running_image": "/vios-adventerprisek9-m",
     "hardware": [
@@ -847,12 +847,12 @@ Connecting to the device: 10.103.171.72
     "release": "",
     "rommon": "Bootstrap",
     "hostname": "LAB-SW1",
-    "uptime": "1 week, 4 hours, 13 minutes",
+    "uptime": "1 week, 4 hours, 18 minutes",
     "uptime_years": "",
     "uptime_weeks": "1",
     "uptime_days": "",
     "uptime_hours": "4",
-    "uptime_minutes": "13",
+    "uptime_minutes": "18",
     "reload_reason": "Unknown reason",
     "running_image": "/vios_l2-adventerprisek9-m",
     "hardware": [
@@ -979,7 +979,7 @@ Connecting to the device: 10.103.171.77
     "bandwidth": "1000000 Kbit",
     "delay": "10 usec",
     "encapsulation": "ARPA",
-    "last_link_flapped": "22:56:15",
+    "last_link_flapped": "23:00:55",
     "vlan_id": "",
     "packet_input_rate": "0",
     "packet_output_rate": "0",
@@ -2295,7 +2295,7 @@ Connecting to the device: 10.103.171.77
 **********************************show version**********************************
 [
   {
-    "uptime": "0 day(s), 22 hour(s), 59 minute(s), 25 second(s)",
+    "uptime": "0 day(s), 23 hour(s), 4 minute(s), 5 second(s)",
     "last_reboot_reason": "Unknown",
     "bios": "",
     "os": "7.0(3)I7(10)",
@@ -2351,7 +2351,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
 [
   {
     "version": "7.3.2",
-    "uptime": "22 hours 34 minutes",
+    "uptime": "22 hours 39 minutes",
     "location": "/opt/cisco/XR/packages/",
     "hardware": "IOS-XRv 9000",
     "build_host": "iox-ucs-017",
@@ -2466,7 +2466,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "via",
     "next_hop": "10.10.20.254",
     "interface": "",
-    "uptime": "22:33:34"
+    "uptime": "22:38:14"
   },
   {
     "vrf": "",
@@ -2478,7 +2478,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "via",
     "next_hop": "10.10.20.254",
     "interface": "MgmtEth0/RP0/CPU0/0",
-    "uptime": "22:33:34"
+    "uptime": "22:38:14"
   },
   {
     "vrf": "",
@@ -2490,7 +2490,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "MgmtEth0/RP0/CPU0/0",
-    "uptime": "22:33:34"
+    "uptime": "22:38:14"
   },
   {
     "vrf": "",
@@ -2502,7 +2502,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "MgmtEth0/RP0/CPU0/0",
-    "uptime": "22:33:34"
+    "uptime": "22:38:14"
   },
   {
     "vrf": "",
@@ -2514,7 +2514,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback100",
-    "uptime": "03:43:15"
+    "uptime": "03:47:55"
   },
   {
     "vrf": "",
@@ -2526,7 +2526,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback421",
-    "uptime": "06:00:37"
+    "uptime": "06:05:18"
   },
   {
     "vrf": "",
@@ -2538,7 +2538,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback421",
-    "uptime": "06:00:37"
+    "uptime": "06:05:18"
   },
   {
     "vrf": "",
@@ -2550,7 +2550,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback44",
-    "uptime": "13:33:31"
+    "uptime": "13:38:12"
   },
   {
     "vrf": "",
@@ -2562,7 +2562,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback44",
-    "uptime": "13:33:31"
+    "uptime": "13:38:12"
   },
   {
     "vrf": "",
@@ -2574,7 +2574,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback66",
-    "uptime": "13:33:43"
+    "uptime": "13:38:24"
   },
   {
     "vrf": "",
@@ -2586,7 +2586,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback66",
-    "uptime": "13:33:43"
+    "uptime": "13:38:24"
   }
 ]
 
@@ -2882,12 +2882,12 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "vlan_id": "",
     "last_input": "00:00:00",
     "last_output": "00:00:00",
-    "input_rate": "2000",
-    "output_rate": "4000",
-    "input_pps": "3",
-    "output_pps": "2",
-    "input_packets": "81112",
-    "output_packets": "61143",
+    "input_rate": "1000",
+    "output_rate": "2000",
+    "input_pps": "2",
+    "output_pps": "1",
+    "input_packets": "81604",
+    "output_packets": "61474",
     "runts": "0",
     "giants": "0",
     "input_errors": "0",
