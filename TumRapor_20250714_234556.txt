@@ -1,0 +1,3132 @@
+****************************************
+Connecting to the device: 10.103.171.68
+**********************************show version**********************************
+[
+  {
+    "software_image": "X86_64_LINUX_IOSD-UNIVERSALK9-M",
+    "version": "16.4.1",
+    "release": "fc2",
+    "rommon": "IOS-XE",
+    "hostname": "LAB-CSR-1",
+    "uptime": "1 week, 4 hours, 14 minutes",
+    "uptime_years": "",
+    "uptime_weeks": "1",
+    "uptime_days": "",
+    "uptime_hours": "4",
+    "uptime_minutes": "14",
+    "reload_reason": "reload",
+    "running_image": "packages.conf",
+    "hardware": [
+      "CSR1000V"
+    ],
+    "serial": [
+      "9M2XMQ5ZELV"
+    ],
+    "config_register": "0x2102",
+    "mac_address": [],
+    "restarted": ""
+  }
+]
+
+*******************************show ip int brief********************************
+[
+  {
+    "interface": "GigabitEthernet1",
+    "ip_address": "10.103.171.68",
+    "status": "up",
+    "proto": "up"
+  },
+  {
+    "interface": "GigabitEthernet2",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "GigabitEthernet3",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "GigabitEthernet4",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "Loopback1",
+    "ip_address": "1.1.1.1",
+    "status": "up",
+    "proto": "up"
+  }
+]
+
+*********************************show ip route**********************************
+[
+  {
+    "vrf": "",
+    "protocol": "S",
+    "type": "",
+    "network": "0.0.0.0",
+    "prefix_length": "0",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "10.103.171.1",
+    "nexthop_vrf": "",
+    "nexthop_if": "",
+    "uptime": "",
+    "flag": "*"
+  },
+  {
+    "vrf": "",
+    "protocol": "C",
+    "type": "",
+    "network": "1.1.1.1",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "Loopback1",
+    "uptime": "",
+    "flag": ""
+  },
+  {
+    "vrf": "",
+    "protocol": "C",
+    "type": "",
+    "network": "10.103.171.0",
+    "prefix_length": "24",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "GigabitEthernet1",
+    "uptime": "",
+    "flag": ""
+  },
+  {
+    "vrf": "",
+    "protocol": "L",
+    "type": "",
+    "network": "10.103.171.68",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "GigabitEthernet1",
+    "uptime": "",
+    "flag": ""
+  }
+]
+
+*********************************show inventory*********************************
+[
+  {
+    "name": "Chassis",
+    "descr": "Cisco CSR1000V Chassis",
+    "pid": "CSR1000V",
+    "vid": "V00  ",
+    "sn": "9M2XMQ5ZELV"
+  },
+  {
+    "name": "module R0",
+    "descr": "Cisco CSR1000V Route Processor",
+    "pid": "CSR1000V",
+    "vid": "V00  ",
+    "sn": "JAB1303001C"
+  },
+  {
+    "name": "module F0",
+    "descr": "Cisco CSR1000V Embedded Services Processor",
+    "pid": "CSR1000V",
+    "vid": "",
+    "sn": ""
+  }
+]
+
+********************************show interfaces*********************************
+[
+  {
+    "interface": "GigabitEthernet1",
+    "link_status": "up",
+    "protocol_status": "up",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000a.0000",
+    "bia": "5000.000a.0000",
+    "description": "",
+    "ip_address": "10.103.171.68",
+    "prefix_length": "24",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "00:00:02",
+    "last_output": "00:04:19",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "1000",
+    "output_rate": "1000",
+    "input_pps": "1",
+    "output_pps": "1",
+    "input_packets": "563574",
+    "output_packets": "7898",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  },
+  {
+    "interface": "GigabitEthernet2",
+    "link_status": "administratively down",
+    "protocol_status": "down",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000a.0001",
+    "bia": "5000.000a.0001",
+    "description": "",
+    "ip_address": "",
+    "prefix_length": "",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "never",
+    "last_output": "never",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  },
+  {
+    "interface": "GigabitEthernet3",
+    "link_status": "administratively down",
+    "protocol_status": "down",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000a.0002",
+    "bia": "5000.000a.0002",
+    "description": "",
+    "ip_address": "",
+    "prefix_length": "",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "never",
+    "last_output": "never",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  },
+  {
+    "interface": "GigabitEthernet4",
+    "link_status": "administratively down",
+    "protocol_status": "down",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000a.0003",
+    "bia": "5000.000a.0003",
+    "description": "",
+    "ip_address": "",
+    "prefix_length": "",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "never",
+    "last_output": "never",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  },
+  {
+    "interface": "Loopback1",
+    "link_status": "up",
+    "protocol_status": "up",
+    "hardware_type": "Loopback",
+    "mac_address": "",
+    "bia": "",
+    "description": "",
+    "ip_address": "1.1.1.1",
+    "prefix_length": "32",
+    "mtu": "1514",
+    "duplex": "",
+    "speed": "",
+    "media_type": "",
+    "bandwidth": "8000000 Kbit",
+    "delay": "5000 usec",
+    "encapsulation": "LOOPBACK",
+    "last_input": "never",
+    "last_output": "never",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "0",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "75",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  }
+]
+
+****************************************
+Connecting to the device: 10.103.171.62
+**********************************show version**********************************
+[
+  {
+    "software_image": "X86_64_LINUX_IOSD-UNIVERSALK9-M",
+    "version": "16.4.1",
+    "release": "fc2",
+    "rommon": "IOS-XE",
+    "hostname": "CSR2",
+    "uptime": "1 week, 3 hours, 34 minutes",
+    "uptime_years": "",
+    "uptime_weeks": "1",
+    "uptime_days": "",
+    "uptime_hours": "3",
+    "uptime_minutes": "34",
+    "reload_reason": "reload",
+    "running_image": "packages.conf",
+    "hardware": [
+      "CSR1000V"
+    ],
+    "serial": [
+      "9S666XFYZY6"
+    ],
+    "config_register": "0x2102",
+    "mac_address": [],
+    "restarted": ""
+  }
+]
+
+*******************************show ip int brief********************************
+[
+  {
+    "interface": "GigabitEthernet1",
+    "ip_address": "10.103.171.62",
+    "status": "up",
+    "proto": "up"
+  },
+  {
+    "interface": "GigabitEthernet2",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "GigabitEthernet3",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "GigabitEthernet4",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  }
+]
+
+*********************************show ip route**********************************
+[
+  {
+    "vrf": "",
+    "protocol": "S",
+    "type": "",
+    "network": "0.0.0.0",
+    "prefix_length": "0",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "10.103.171.1",
+    "nexthop_vrf": "",
+    "nexthop_if": "",
+    "uptime": "",
+    "flag": "*"
+  },
+  {
+    "vrf": "",
+    "protocol": "C",
+    "type": "",
+    "network": "10.103.171.0",
+    "prefix_length": "24",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "GigabitEthernet1",
+    "uptime": "",
+    "flag": ""
+  },
+  {
+    "vrf": "",
+    "protocol": "L",
+    "type": "",
+    "network": "10.103.171.62",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "GigabitEthernet1",
+    "uptime": "",
+    "flag": ""
+  }
+]
+
+*********************************show inventory*********************************
+[
+  {
+    "name": "Chassis",
+    "descr": "Cisco CSR1000V Chassis",
+    "pid": "CSR1000V",
+    "vid": "V00  ",
+    "sn": "9S666XFYZY6"
+  },
+  {
+    "name": "module R0",
+    "descr": "Cisco CSR1000V Route Processor",
+    "pid": "CSR1000V",
+    "vid": "V00  ",
+    "sn": "JAB1303001C"
+  },
+  {
+    "name": "module F0",
+    "descr": "Cisco CSR1000V Embedded Services Processor",
+    "pid": "CSR1000V",
+    "vid": "",
+    "sn": ""
+  }
+]
+
+********************************show interfaces*********************************
+[
+  {
+    "interface": "GigabitEthernet1",
+    "link_status": "up",
+    "protocol_status": "up",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000b.0000",
+    "bia": "5000.000b.0000",
+    "description": "",
+    "ip_address": "10.103.171.62",
+    "prefix_length": "24",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "00:00:05",
+    "last_output": "00:01:08",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "559447",
+    "output_packets": "6232",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  },
+  {
+    "interface": "GigabitEthernet2",
+    "link_status": "administratively down",
+    "protocol_status": "down",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000b.0001",
+    "bia": "5000.000b.0001",
+    "description": "",
+    "ip_address": "",
+    "prefix_length": "",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "never",
+    "last_output": "never",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  },
+  {
+    "interface": "GigabitEthernet3",
+    "link_status": "administratively down",
+    "protocol_status": "down",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000b.0002",
+    "bia": "5000.000b.0002",
+    "description": "",
+    "ip_address": "",
+    "prefix_length": "",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "never",
+    "last_output": "never",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  },
+  {
+    "interface": "GigabitEthernet4",
+    "link_status": "administratively down",
+    "protocol_status": "down",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000b.0003",
+    "bia": "5000.000b.0003",
+    "description": "",
+    "ip_address": "",
+    "prefix_length": "",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "never",
+    "last_output": "never",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  }
+]
+
+****************************************
+Connecting to the device: 10.103.171.71
+****************************show ip interface brief*****************************
+[
+  {
+    "interface": "GigabitEthernet0/0",
+    "ip_address": "10.103.171.71",
+    "status": "up",
+    "proto": "up"
+  },
+  {
+    "interface": "GigabitEthernet0/1",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "GigabitEthernet0/2",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "GigabitEthernet0/3",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  }
+]
+
+*********************************show ip route**********************************
+[
+  {
+    "vrf": "",
+    "protocol": "S",
+    "type": "",
+    "network": "0.0.0.0",
+    "prefix_length": "0",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "10.103.171.1",
+    "nexthop_vrf": "",
+    "nexthop_if": "",
+    "uptime": "",
+    "flag": "*"
+  },
+  {
+    "vrf": "",
+    "protocol": "C",
+    "type": "",
+    "network": "10.103.171.0",
+    "prefix_length": "24",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "GigabitEthernet0/0",
+    "uptime": "",
+    "flag": ""
+  },
+  {
+    "vrf": "",
+    "protocol": "L",
+    "type": "",
+    "network": "10.103.171.71",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "GigabitEthernet0/0",
+    "uptime": "",
+    "flag": ""
+  }
+]
+
+**********************************show version**********************************
+[
+  {
+    "software_image": "VIOS-ADVENTERPRISEK9-M",
+    "version": "15.7(3)M3",
+    "release": "fc2",
+    "rommon": "Bootstrap",
+    "hostname": "LAB-R1",
+    "uptime": "1 week, 4 hours, 17 minutes",
+    "uptime_years": "",
+    "uptime_weeks": "1",
+    "uptime_days": "",
+    "uptime_hours": "4",
+    "uptime_minutes": "17",
+    "reload_reason": "Unknown reason",
+    "running_image": "/vios-adventerprisek9-m",
+    "hardware": [
+      "IOSv"
+    ],
+    "serial": [
+      "9COSM7L8QIK71PTYC0CNZ"
+    ],
+    "config_register": "0x0",
+    "mac_address": [],
+    "restarted": ""
+  }
+]
+
+*********************************show inventory*********************************
+[
+  {
+    "name": "IOSv",
+    "descr": "IOSv chassis, Hw Serial#: 9COSM7L8QIK71PTYC0CNZ, Hw Revision: 1.0",
+    "pid": "IOSv",
+    "vid": "1.0",
+    "sn": "9COSM7L8QIK71PTYC0CNZ"
+  }
+]
+
+****************************************
+Connecting to the device: 10.103.171.72
+********************************show vlan brief*********************************
+[
+  {
+    "vlan_id": "1",
+    "vlan_name": "default",
+    "status": "active",
+    "interfaces": [
+      "Gi0/1",
+      "Gi0/2",
+      "Gi0/3",
+      "Gi1/0",
+      "Gi1/1",
+      "Gi1/2",
+      "Gi1/3"
+    ]
+  },
+  {
+    "vlan_id": "1002",
+    "vlan_name": "fddi-default",
+    "status": "act/unsup",
+    "interfaces": []
+  },
+  {
+    "vlan_id": "1003",
+    "vlan_name": "token-ring-default",
+    "status": "act/unsup",
+    "interfaces": []
+  },
+  {
+    "vlan_id": "1004",
+    "vlan_name": "fddinet-default",
+    "status": "act/unsup",
+    "interfaces": []
+  },
+  {
+    "vlan_id": "1005",
+    "vlan_name": "trnet-default",
+    "status": "act/unsup",
+    "interfaces": []
+  }
+]
+
+**********************************show version**********************************
+[
+  {
+    "software_image": "",
+    "version": "",
+    "release": "",
+    "rommon": "Bootstrap",
+    "hostname": "LAB-SW1",
+    "uptime": "1 week, 4 hours, 13 minutes",
+    "uptime_years": "",
+    "uptime_weeks": "1",
+    "uptime_days": "",
+    "uptime_hours": "4",
+    "uptime_minutes": "13",
+    "reload_reason": "Unknown reason",
+    "running_image": "/vios_l2-adventerprisek9-m",
+    "hardware": [
+      "IOSv"
+    ],
+    "serial": [
+      "9VRIM18P28O"
+    ],
+    "config_register": "0x101",
+    "mac_address": [],
+    "restarted": ""
+  }
+]
+
+*********************************show inventory*********************************
+
+
+*****************************show interfaces status*****************************
+[
+  {
+    "port": "Gi0/0",
+    "name": "",
+    "status": "connected",
+    "vlan_id": "routed",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi0/1",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi0/2",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi0/3",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi1/0",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi1/1",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi1/2",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi1/3",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  }
+]
+
+****************************************
+Connecting to the device: 10.103.171.77
+******************************show interface e1/1*******************************
+[
+  {
+    "interface": "Ethernet1/1",
+    "link_status": "up",
+    "admin_state": "up",
+    "hardware_type": "100/1000/10000 Ethernet",
+    "mac_address": "5000.000c.0007",
+    "bia": "5000.000c.0008",
+    "description": "",
+    "ip_address": "10.103.171.77",
+    "prefix_length": "24",
+    "mtu": "1500",
+    "mode": "",
+    "duplex": "full-duplex",
+    "speed": "1000 Mb/s",
+    "input_packets": "0",
+    "output_packets": "0",
+    "input_errors": "0",
+    "output_errors": "0",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_link_flapped": "22:56:15",
+    "vlan_id": "",
+    "packet_input_rate": "0",
+    "packet_output_rate": "0",
+    "bandwidth_input_rate": "0",
+    "bandwidth_output_rate": "0",
+    "media_type": ""
+  }
+]
+
+*****************************show interface status******************************
+[
+  {
+    "port": "mgmt0",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "routed",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "--"
+  },
+  {
+    "port": "Eth1/1",
+    "name": "--",
+    "status": "connected",
+    "vlan_id": "routed",
+    "duplex": "full",
+    "speed": "1000",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/2",
+    "name": "--",
+    "status": "connected",
+    "vlan_id": "1",
+    "duplex": "full",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/3",
+    "name": "--",
+    "status": "connected",
+    "vlan_id": "1",
+    "duplex": "full",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/4",
+    "name": "--",
+    "status": "connected",
+    "vlan_id": "1",
+    "duplex": "full",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/5",
+    "name": "--",
+    "status": "connected",
+    "vlan_id": "1",
+    "duplex": "full",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/6",
+    "name": "--",
+    "status": "connected",
+    "vlan_id": "1",
+    "duplex": "full",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/7",
+    "name": "--",
+    "status": "connected",
+    "vlan_id": "1",
+    "duplex": "full",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/8",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/9",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/10",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/11",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/12",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/13",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/14",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/15",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/16",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/17",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/18",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/19",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/20",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/21",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/22",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/23",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/24",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/25",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/26",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/27",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/28",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/29",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/30",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/31",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/32",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/33",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/34",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/35",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/36",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/37",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/38",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/39",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/40",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/41",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/42",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/43",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/44",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/45",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/46",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/47",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/48",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/49",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/50",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/51",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/52",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/53",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/54",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/55",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/56",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/57",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/58",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/59",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/60",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/61",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/62",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/63",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/64",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/65",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/66",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/67",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/68",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/69",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/70",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/71",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/72",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/73",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/74",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/75",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/76",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/77",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/78",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/79",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/80",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/81",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/82",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/83",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/84",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/85",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/86",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/87",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/88",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/89",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/90",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/91",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/92",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/93",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/94",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/95",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/96",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/97",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/98",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/99",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/100",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/101",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/102",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/103",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/104",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/105",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/106",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/107",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/108",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/109",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/110",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/111",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/112",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/113",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/114",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/115",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/116",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/117",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/118",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/119",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/120",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/121",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/122",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/123",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/124",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/125",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/126",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/127",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  },
+  {
+    "port": "Eth1/128",
+    "name": "--",
+    "status": "notconnec",
+    "vlan_id": "1",
+    "duplex": "auto",
+    "speed": "auto",
+    "type": "10g"
+  }
+]
+
+********************************show vlan brief*********************************
+[
+  {
+    "vlan_id": "1",
+    "vlan_name": "default",
+    "status": "active",
+    "interfaces": [
+      "Eth1/2",
+      "Eth1/3",
+      "Eth1/4",
+      "Eth1/5",
+      "Eth1/6",
+      "Eth1/7",
+      "Eth1/8",
+      "Eth1/9",
+      "Eth1/10",
+      "Eth1/11",
+      "Eth1/12",
+      "Eth1/13",
+      "Eth1/14",
+      "Eth1/15",
+      "Eth1/16",
+      "Eth1/17",
+      "Eth1/18",
+      "Eth1/19",
+      "Eth1/20",
+      "Eth1/21",
+      "Eth1/22",
+      "Eth1/23",
+      "Eth1/24",
+      "Eth1/25",
+      "Eth1/26",
+      "Eth1/27",
+      "Eth1/28",
+      "Eth1/29",
+      "Eth1/30",
+      "Eth1/31",
+      "Eth1/32",
+      "Eth1/33",
+      "Eth1/34",
+      "Eth1/35",
+      "Eth1/36",
+      "Eth1/37",
+      "Eth1/38",
+      "Eth1/39",
+      "Eth1/40",
+      "Eth1/41",
+      "Eth1/42",
+      "Eth1/43",
+      "Eth1/44",
+      "Eth1/45",
+      "Eth1/46",
+      "Eth1/47",
+      "Eth1/48",
+      "Eth1/49",
+      "Eth1/50",
+      "Eth1/51",
+      "Eth1/52",
+      "Eth1/53",
+      "Eth1/54",
+      "Eth1/55",
+      "Eth1/56",
+      "Eth1/57",
+      "Eth1/58",
+      "Eth1/59",
+      "Eth1/60",
+      "Eth1/61",
+      "Eth1/62",
+      "Eth1/63",
+      "Eth1/64",
+      "Eth1/65",
+      "Eth1/66",
+      "Eth1/67",
+      "Eth1/68",
+      "Eth1/69",
+      "Eth1/70",
+      "Eth1/71",
+      "Eth1/72",
+      "Eth1/73",
+      "Eth1/74",
+      "Eth1/75",
+      "Eth1/76",
+      "Eth1/77",
+      "Eth1/78",
+      "Eth1/79",
+      "Eth1/80",
+      "Eth1/81",
+      "Eth1/82",
+      "Eth1/83",
+      "Eth1/84",
+      "Eth1/85",
+      "Eth1/86",
+      "Eth1/87",
+      "Eth1/88",
+      "Eth1/89",
+      "Eth1/90",
+      "Eth1/91",
+      "Eth1/92",
+      "Eth1/93",
+      "Eth1/94",
+      "Eth1/95",
+      "Eth1/96",
+      "Eth1/97",
+      "Eth1/98",
+      "Eth1/99",
+      "Eth1/100",
+      "Eth1/101",
+      "Eth1/102",
+      "Eth1/103",
+      "Eth1/104",
+      "Eth1/105",
+      "Eth1/106",
+      "Eth1/107",
+      "Eth1/108",
+      "Eth1/109",
+      "Eth1/110",
+      "Eth1/111",
+      "Eth1/112",
+      "Eth1/113",
+      "Eth1/114",
+      "Eth1/115",
+      "Eth1/116",
+      "Eth1/117",
+      "Eth1/118",
+      "Eth1/119",
+      "Eth1/120",
+      "Eth1/121",
+      "Eth1/122",
+      "Eth1/123",
+      "Eth1/124",
+      "Eth1/125",
+      "Eth1/126",
+      "Eth1/127",
+      "Eth1/128"
+    ]
+  }
+]
+
+**********************************show version**********************************
+[
+  {
+    "uptime": "0 day(s), 22 hour(s), 59 minute(s), 25 second(s)",
+    "last_reboot_reason": "Unknown",
+    "bios": "",
+    "os": "7.0(3)I7(10)",
+    "boot_image": "bootflash:///nxos.7.0.3.I7.10.bin",
+    "platform": "9000v",
+    "hostname": "LAB-NXOS-SWITCH-1",
+    "serial": "9U6E9SJ8G81"
+  }
+]
+
+*********************************show inventory*********************************
+[
+  {
+    "name": "Chassis",
+    "descr": "Nexus9000 9000v Chassis",
+    "pid": "N9K-9000v",
+    "vid": "V02",
+    "sn": "9U6E9SJ8G81"
+  },
+  {
+    "name": "Slot 1",
+    "descr": "Nexus 9000v Ethernet Module",
+    "pid": "N9K-9000v",
+    "vid": "V02",
+    "sn": "9U6E9SJ8G81"
+  },
+  {
+    "name": "Fan 1",
+    "descr": "Nexus9000 9000v Chassis Fan Module",
+    "pid": "N9K-9000v-FAN",
+    "vid": "V01",
+    "sn": "N/A"
+  },
+  {
+    "name": "Fan 2",
+    "descr": "Nexus9000 9000v Chassis Fan Module",
+    "pid": "N9K-9000v-FAN",
+    "vid": "V01",
+    "sn": "N/A"
+  },
+  {
+    "name": "Fan 3",
+    "descr": "Nexus9000 9000v Chassis Fan Module",
+    "pid": "N9K-9000v-FAN",
+    "vid": "V01",
+    "sn": "N/A"
+  }
+]
+
+****************************************
+Connecting to the device: sandbox-iosxr-1.cisco.com
+**********************************show version**********************************
+[
+  {
+    "version": "7.3.2",
+    "uptime": "22 hours 34 minutes",
+    "location": "/opt/cisco/XR/packages/",
+    "hardware": "IOS-XRv 9000",
+    "build_host": "iox-ucs-017",
+    "label": "7.3.2-0"
+  }
+]
+
+*******************************show ip int brief********************************
+[
+  {
+    "interface": "Loopback44",
+    "ip_address": "44.44.44.44",
+    "status": "Up",
+    "proto": "Up",
+    "vrf": "default"
+  },
+  {
+    "interface": "Loopback66",
+    "ip_address": "66.66.66.66",
+    "status": "Up",
+    "proto": "Up",
+    "vrf": "default"
+  },
+  {
+    "interface": "Loopback100",
+    "ip_address": "10.100.100.1",
+    "status": "Up",
+    "proto": "Up",
+    "vrf": "default"
+  },
+  {
+    "interface": "Loopback421",
+    "ip_address": "11.19.19.90",
+    "status": "Up",
+    "proto": "Up",
+    "vrf": "default"
+  },
+  {
+    "interface": "Loopback555",
+    "ip_address": "unassigned",
+    "status": "Up",
+    "proto": "Up",
+    "vrf": "default"
+  },
+  {
+    "interface": "MgmtEth0/RP0/CPU0/0",
+    "ip_address": "10.10.20.175",
+    "status": "Up",
+    "proto": "Up",
+    "vrf": "default"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/0",
+    "ip_address": "unassigned",
+    "status": "Shutdown",
+    "proto": "Down",
+    "vrf": "default"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/1",
+    "ip_address": "unassigned",
+    "status": "Shutdown",
+    "proto": "Down",
+    "vrf": "default"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/2",
+    "ip_address": "unassigned",
+    "status": "Shutdown",
+    "proto": "Down",
+    "vrf": "default"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/3",
+    "ip_address": "unassigned",
+    "status": "Shutdown",
+    "proto": "Down",
+    "vrf": "default"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/4",
+    "ip_address": "unassigned",
+    "status": "Shutdown",
+    "proto": "Down",
+    "vrf": "default"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/5",
+    "ip_address": "unassigned",
+    "status": "Shutdown",
+    "proto": "Down",
+    "vrf": "default"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/6",
+    "ip_address": "unassigned",
+    "status": "Shutdown",
+    "proto": "Down",
+    "vrf": "default"
+  }
+]
+
+*********************************show ip route**********************************
+[
+  {
+    "vrf": "",
+    "protocol": "S*",
+    "network": "0.0.0.0",
+    "prefix_length": "0",
+    "distance": "1",
+    "metric": "0",
+    "type": "via",
+    "next_hop": "10.10.20.254",
+    "interface": "",
+    "uptime": "22:33:34"
+  },
+  {
+    "vrf": "",
+    "protocol": "S*",
+    "network": "0.0.0.0",
+    "prefix_length": "0",
+    "distance": "1",
+    "metric": "0",
+    "type": "via",
+    "next_hop": "10.10.20.254",
+    "interface": "MgmtEth0/RP0/CPU0/0",
+    "uptime": "22:33:34"
+  },
+  {
+    "vrf": "",
+    "protocol": "C",
+    "network": "10.10.20.0",
+    "prefix_length": "24",
+    "distance": "",
+    "metric": "",
+    "type": "directly",
+    "next_hop": "connected",
+    "interface": "MgmtEth0/RP0/CPU0/0",
+    "uptime": "22:33:34"
+  },
+  {
+    "vrf": "",
+    "protocol": "L",
+    "network": "10.10.20.175",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "type": "directly",
+    "next_hop": "connected",
+    "interface": "MgmtEth0/RP0/CPU0/0",
+    "uptime": "22:33:34"
+  },
+  {
+    "vrf": "",
+    "protocol": "L",
+    "network": "10.100.100.1",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "type": "directly",
+    "next_hop": "connected",
+    "interface": "Loopback100",
+    "uptime": "03:43:15"
+  },
+  {
+    "vrf": "",
+    "protocol": "C",
+    "network": "11.19.19.0",
+    "prefix_length": "24",
+    "distance": "",
+    "metric": "",
+    "type": "directly",
+    "next_hop": "connected",
+    "interface": "Loopback421",
+    "uptime": "06:00:37"
+  },
+  {
+    "vrf": "",
+    "protocol": "L",
+    "network": "11.19.19.90",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "type": "directly",
+    "next_hop": "connected",
+    "interface": "Loopback421",
+    "uptime": "06:00:37"
+  },
+  {
+    "vrf": "",
+    "protocol": "C",
+    "network": "44.44.44.0",
+    "prefix_length": "24",
+    "distance": "",
+    "metric": "",
+    "type": "directly",
+    "next_hop": "connected",
+    "interface": "Loopback44",
+    "uptime": "13:33:31"
+  },
+  {
+    "vrf": "",
+    "protocol": "L",
+    "network": "44.44.44.44",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "type": "directly",
+    "next_hop": "connected",
+    "interface": "Loopback44",
+    "uptime": "13:33:31"
+  },
+  {
+    "vrf": "",
+    "protocol": "C",
+    "network": "66.66.66.0",
+    "prefix_length": "24",
+    "distance": "",
+    "metric": "",
+    "type": "directly",
+    "next_hop": "connected",
+    "interface": "Loopback66",
+    "uptime": "13:33:43"
+  },
+  {
+    "vrf": "",
+    "protocol": "L",
+    "network": "66.66.66.66",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "type": "directly",
+    "next_hop": "connected",
+    "interface": "Loopback66",
+    "uptime": "13:33:43"
+  }
+]
+
+*********************************show inventory*********************************
+[
+  {
+    "name": "0/0",
+    "descr": "Cisco IOS-XRv 9000 Centralized Line Card",
+    "pid": "R-IOSXRV9000-LC-C",
+    "vid": "V01",
+    "sn": "86E4A261046"
+  },
+  {
+    "name": "0/0/0",
+    "descr": "N/A",
+    "pid": "PORT-1G-NIC",
+    "vid": "N/A",
+    "sn": "N/A"
+  },
+  {
+    "name": "0/0/1",
+    "descr": "N/A",
+    "pid": "PORT-1G-NIC",
+    "vid": "N/A",
+    "sn": "N/A"
+  },
+  {
+    "name": "0/0/2",
+    "descr": "N/A",
+    "pid": "PORT-1G-NIC",
+    "vid": "N/A",
+    "sn": "N/A"
+  },
+  {
+    "name": "0/0/3",
+    "descr": "N/A",
+    "pid": "PORT-1G-NIC",
+    "vid": "N/A",
+    "sn": "N/A"
+  },
+  {
+    "name": "0/0/4",
+    "descr": "N/A",
+    "pid": "PORT-1G-NIC",
+    "vid": "N/A",
+    "sn": "N/A"
+  },
+  {
+    "name": "0/0/5",
+    "descr": "N/A",
+    "pid": "PORT-1G-NIC",
+    "vid": "N/A",
+    "sn": "N/A"
+  },
+  {
+    "name": "0/0/6",
+    "descr": "N/A",
+    "pid": "PORT-1G-NIC",
+    "vid": "N/A",
+    "sn": "N/A"
+  },
+  {
+    "name": "0/RP0",
+    "descr": "Cisco IOS-XRv 9000 Centralized Route Processor",
+    "pid": "R-IOSXRV9000-RP-C",
+    "vid": "V01",
+    "sn": "F2E02123A63"
+  },
+  {
+    "name": "Rack 0",
+    "descr": "Cisco IOS-XRv 9000 Centralized Virtual Router",
+    "pid": "R-IOSXRV9000-CC",
+    "vid": "V01",
+    "sn": "B550ED1D0D9"
+  }
+]
+
+********************************show interfaces*********************************
+[
+  {
+    "interface": "Loopback44",
+    "link_status": "up",
+    "admin_state": "up",
+    "hardware_type": "Loopback",
+    "mac_address": "",
+    "bia": "",
+    "description": "",
+    "ip_address": "44.44.44.44/24",
+    "mtu": "1500",
+    "duplex": "",
+    "hardware_media": "",
+    "speed": "",
+    "bandwidth": "0 Kbit",
+    "encapsulation": "Loopback",
+    "vlan_id": "",
+    "last_input": "Unknown",
+    "last_output": "Unknown",
+    "input_rate": "",
+    "output_rate": "",
+    "input_pps": "",
+    "output_pps": "",
+    "input_packets": "",
+    "output_packets": "",
+    "runts": "",
+    "giants": "",
+    "input_errors": "",
+    "crc": "",
+    "frame": "",
+    "overrun": "",
+    "abort": "",
+    "output_errors": ""
+  },
+  {
+    "interface": "Loopback66",
+    "link_status": "up",
+    "admin_state": "up",
+    "hardware_type": "Loopback",
+    "mac_address": "",
+    "bia": "",
+    "description": "",
+    "ip_address": "66.66.66.66/24",
+    "mtu": "1500",
+    "duplex": "",
+    "hardware_media": "",
+    "speed": "",
+    "bandwidth": "0 Kbit",
+    "encapsulation": "Loopback",
+    "vlan_id": "",
+    "last_input": "Unknown",
+    "last_output": "Unknown",
+    "input_rate": "",
+    "output_rate": "",
+    "input_pps": "",
+    "output_pps": "",
+    "input_packets": "",
+    "output_packets": "",
+    "runts": "",
+    "giants": "",
+    "input_errors": "",
+    "crc": "",
+    "frame": "",
+    "overrun": "",
+    "abort": "",
+    "output_errors": ""
+  },
+  {
+    "interface": "Loopback100",
+    "link_status": "up",
+    "admin_state": "up",
+    "hardware_type": "Loopback",
+    "mac_address": "",
+    "bia": "",
+    "description": "***TEST LOOPBACK****",
+    "ip_address": "10.100.100.1/32",
+    "mtu": "1500",
+    "duplex": "",
+    "hardware_media": "",
+    "speed": "",
+    "bandwidth": "0 Kbit",
+    "encapsulation": "Loopback",
+    "vlan_id": "",
+    "last_input": "Unknown",
+    "last_output": "Unknown",
+    "input_rate": "",
+    "output_rate": "",
+    "input_pps": "",
+    "output_pps": "",
+    "input_packets": "",
+    "output_packets": "",
+    "runts": "",
+    "giants": "",
+    "input_errors": "",
+    "crc": "",
+    "frame": "",
+    "overrun": "",
+    "abort": "",
+    "output_errors": ""
+  },
+  {
+    "interface": "Loopback421",
+    "link_status": "up",
+    "admin_state": "up",
+    "hardware_type": "Loopback",
+    "mac_address": "",
+    "bia": "",
+    "description": "Just Testing some things again, don't mind me",
+    "ip_address": "11.19.19.90/24",
+    "mtu": "1500",
+    "duplex": "",
+    "hardware_media": "",
+    "speed": "",
+    "bandwidth": "0 Kbit",
+    "encapsulation": "Loopback",
+    "vlan_id": "",
+    "last_input": "Unknown",
+    "last_output": "Unknown",
+    "input_rate": "",
+    "output_rate": "",
+    "input_pps": "",
+    "output_pps": "",
+    "input_packets": "",
+    "output_packets": "",
+    "runts": "",
+    "giants": "",
+    "input_errors": "",
+    "crc": "",
+    "frame": "",
+    "overrun": "",
+    "abort": "",
+    "output_errors": ""
+  },
+  {
+    "interface": "Loopback555",
+    "link_status": "up",
+    "admin_state": "up",
+    "hardware_type": "Loopback",
+    "mac_address": "",
+    "bia": "",
+    "description": "PRUEBA_KV",
+    "ip_address": "Unknown",
+    "mtu": "1500",
+    "duplex": "",
+    "hardware_media": "",
+    "speed": "",
+    "bandwidth": "0 Kbit",
+    "encapsulation": "Loopback",
+    "vlan_id": "",
+    "last_input": "Unknown",
+    "last_output": "Unknown",
+    "input_rate": "",
+    "output_rate": "",
+    "input_pps": "",
+    "output_pps": "",
+    "input_packets": "",
+    "output_packets": "",
+    "runts": "",
+    "giants": "",
+    "input_errors": "",
+    "crc": "",
+    "frame": "",
+    "overrun": "",
+    "abort": "",
+    "output_errors": ""
+  },
+  {
+    "interface": "Null0",
+    "link_status": "up",
+    "admin_state": "up",
+    "hardware_type": "Null",
+    "mac_address": "",
+    "bia": "",
+    "description": "",
+    "ip_address": "Unknown",
+    "mtu": "1500",
+    "duplex": "",
+    "hardware_media": "",
+    "speed": "",
+    "bandwidth": "0 Kbit",
+    "encapsulation": "Null",
+    "vlan_id": "",
+    "last_input": "never",
+    "last_output": "never",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "",
+    "giants": "",
+    "input_errors": "",
+    "crc": "",
+    "frame": "",
+    "overrun": "",
+    "abort": "",
+    "output_errors": ""
+  },
+  {
+    "interface": "MgmtEth0/RP0/CPU0/0",
+    "link_status": "up",
+    "admin_state": "up",
+    "hardware_type": "Management Ethernet",
+    "mac_address": "0050.56bf.d307",
+    "bia": "0050.56bf.d307",
+    "description": "",
+    "ip_address": "10.10.20.175/24",
+    "mtu": "1514",
+    "duplex": "Full",
+    "hardware_media": "CX",
+    "speed": "1000Mb/s",
+    "bandwidth": "1000000 Kbit",
+    "encapsulation": "ARPA",
+    "vlan_id": "",
+    "last_input": "00:00:00",
+    "last_output": "00:00:00",
+    "input_rate": "2000",
+    "output_rate": "4000",
+    "input_pps": "3",
+    "output_pps": "2",
+    "input_packets": "81112",
+    "output_packets": "61143",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "0",
+    "output_errors": "0"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/0",
+    "link_status": "administratively down",
+    "admin_state": "administratively down",
+    "hardware_type": "GigabitEthernet",
+    "mac_address": "0050.56bf.bb17",
+    "bia": "0050.56bf.bb17",
+    "description": "",
+    "ip_address": "Unknown",
+    "mtu": "1514",
+    "duplex": "unknown",
+    "hardware_media": "",
+    "speed": "1000Mb/s",
+    "bandwidth": "1000000 Kbit",
+    "encapsulation": "ARPA",
+    "vlan_id": "",
+    "last_input": "never",
+    "last_output": "never",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "0",
+    "output_errors": "0"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/1",
+    "link_status": "administratively down",
+    "admin_state": "administratively down",
+    "hardware_type": "GigabitEthernet",
+    "mac_address": "0050.56bf.1337",
+    "bia": "0050.56bf.1337",
+    "description": "test",
+    "ip_address": "Unknown",
+    "mtu": "1514",
+    "duplex": "unknown",
+    "hardware_media": "",
+    "speed": "1000Mb/s",
+    "bandwidth": "1000000 Kbit",
+    "encapsulation": "ARPA",
+    "vlan_id": "",
+    "last_input": "never",
+    "last_output": "never",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "0",
+    "output_errors": "0"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/2",
+    "link_status": "administratively down",
+    "admin_state": "administratively down",
+    "hardware_type": "GigabitEthernet",
+    "mac_address": "0050.56bf.8181",
+    "bia": "0050.56bf.8181",
+    "description": "test",
+    "ip_address": "Unknown",
+    "mtu": "1514",
+    "duplex": "unknown",
+    "hardware_media": "",
+    "speed": "1000Mb/s",
+    "bandwidth": "1000000 Kbit",
+    "encapsulation": "ARPA",
+    "vlan_id": "",
+    "last_input": "never",
+    "last_output": "never",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "0",
+    "output_errors": "0"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/3",
+    "link_status": "administratively down",
+    "admin_state": "administratively down",
+    "hardware_type": "GigabitEthernet",
+    "mac_address": "0050.56bf.afc9",
+    "bia": "0050.56bf.afc9",
+    "description": "test",
+    "ip_address": "Unknown",
+    "mtu": "1514",
+    "duplex": "unknown",
+    "hardware_media": "",
+    "speed": "1000Mb/s",
+    "bandwidth": "1000000 Kbit",
+    "encapsulation": "ARPA",
+    "vlan_id": "",
+    "last_input": "never",
+    "last_output": "never",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "0",
+    "output_errors": "0"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/4",
+    "link_status": "administratively down",
+    "admin_state": "administratively down",
+    "hardware_type": "GigabitEthernet",
+    "mac_address": "0050.56bf.bedb",
+    "bia": "0050.56bf.bedb",
+    "description": "",
+    "ip_address": "Unknown",
+    "mtu": "1514",
+    "duplex": "unknown",
+    "hardware_media": "",
+    "speed": "1000Mb/s",
+    "bandwidth": "1000000 Kbit",
+    "encapsulation": "ARPA",
+    "vlan_id": "",
+    "last_input": "never",
+    "last_output": "never",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "0",
+    "output_errors": "0"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/5",
+    "link_status": "administratively down",
+    "admin_state": "administratively down",
+    "hardware_type": "GigabitEthernet",
+    "mac_address": "0050.56bf.3ee8",
+    "bia": "0050.56bf.3ee8",
+    "description": "",
+    "ip_address": "Unknown",
+    "mtu": "1514",
+    "duplex": "unknown",
+    "hardware_media": "",
+    "speed": "1000Mb/s",
+    "bandwidth": "1000000 Kbit",
+    "encapsulation": "ARPA",
+    "vlan_id": "",
+    "last_input": "never",
+    "last_output": "never",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "0",
+    "output_errors": "0"
+  },
+  {
+    "interface": "GigabitEthernet0/0/0/6",
+    "link_status": "administratively down",
+    "admin_state": "administratively down",
+    "hardware_type": "GigabitEthernet",
+    "mac_address": "0050.56bf.ee29",
+    "bia": "0050.56bf.ee29",
+    "description": "",
+    "ip_address": "Unknown",
+    "mtu": "1514",
+    "duplex": "unknown",
+    "hardware_media": "",
+    "speed": "1000Mb/s",
+    "bandwidth": "1000000 Kbit",
+    "encapsulation": "ARPA",
+    "vlan_id": "",
+    "last_input": "never",
+    "last_output": "never",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "0",
+    "output_errors": "0"
+  }
+]
+

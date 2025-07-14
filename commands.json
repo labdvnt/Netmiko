@@ -1,0 +1,28 @@
+{
+  "cisco_3725": [
+    "show ip interface brief",
+    "show ip route",
+    "show version",
+    "show inventory"
+  ],
+  "cisco_2960": [
+    "show vlan brief",
+    "show version",
+    "show inventory",
+    "show interfaces status"
+  ],
+  "nexus_9000": [
+    "show interface e1/1",
+    "show interface status",
+    "show vlan brief",
+    "show version",
+    "show inventory"
+  ],
+  "asr_9000": [
+    "show version",
+    "show ip int brief",
+    "show ip route",
+    "show inventory",
+    "show interfaces"
+  ]
+}
