@@ -1,7 +1,13 @@
+import threading
+import psutil
 import json
+import time
 from netmiko import ConnectHandler
 from netmiko import NetmikoAuthenticationException, NetmikoTimeoutException
 from datetime import datetime
+
+# Maximum number of concurrent threads
+MAX_THREADS = 5  # You can change this value as needed
 
 def load_json_file(filename):
     with open(filename, 'r') as file:
@@ -46,33 +52,62 @@ def write_report(outfile, device_ip, results):
         pretty_output = json.dumps(output, indent=2) if isinstance(output, (dict, list)) else str(output)
         outfile.write(f"{pretty_output}\n\n")
 
+
+def worker(device, commands_map, outfile_lock, outfile):
+    print(f"\n{'=' * 50}")
+    print(f"Connecting to device: {device['ip']}")
+    connection = connect_to_device(device)
+
+    if isinstance(connection, str):  # if connection is an error message
+        print(f" {connection}")
+        with outfile_lock:
+            outfile.write(f"{connection}\n")
+        return
+
+    device_type = device['model_type']
+    commands = commands_map.get(device_type, [])
+
+    results = run_commands(connection, commands)
+
+    with outfile_lock:
+        write_report(outfile, device['ip'], results)
+
+    connection.disconnect()
+
+
 def main():
     devices = load_json_file('devices.json')
     commands_map = load_json_file('commands.json')
 
+    start_time = time.time()
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"All-Devices-Report_{timestamp}.txt"
 
+    outfile_lock = threading.Lock()
+
     with open(filename, 'w') as outfile:
+        active_threads = []
         for device in devices:
-            print(f"\n{'=' * 50}")
-            print(f"Connecting to device: {device['ip']}")
-            connection = connect_to_device(device)
+            while len(active_threads) >= MAX_THREADS:
+                for t in active_threads:
+                    if not t.is_alive():
+                        active_threads.remove(t)
 
-            if isinstance(connection, str):  # if connection is an error message
-                print(f" {connection}")
-                outfile.write(f"{connection}\n")
-                continue
+            t = threading.Thread(target=worker, args=(device, commands_map, outfile_lock, outfile))
+            active_threads.append(t)
+            t.start()
 
-            device_type = device['model_type']
-            commands = commands_map.get(device_type, [])
+        for t in active_threads:
+            t.join()
 
-            results = run_commands(connection, commands)
-            write_report(outfile, device['ip'], results)
-
-            connection.disconnect()
-
+    cpu = psutil.cpu_percent(interval=1)
+    mem = psutil.virtual_memory().percent
     print(f"\n✅ Report successfully generated: {filename}")
+    print(f"📊 CPU Usage: {cpu}%")
+    print(f"📊 Memory Usage: {mem}%")
+
+    elapsed_time = time.time() - start_time
+    print(f"⏱️ Total Execution Time: {elapsed_time:.2f} seconds")
 
 if __name__ == '__main__':
     main()

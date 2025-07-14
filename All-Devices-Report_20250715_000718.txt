@@ -1,5 +1,588 @@
 ****************************************
-Connecting to the device: 10.103.171.68
+Connected to device: 10.103.171.71
+****************************show ip interface brief*****************************
+[
+  {
+    "interface": "GigabitEthernet0/0",
+    "ip_address": "10.103.171.71",
+    "status": "up",
+    "proto": "up"
+  },
+  {
+    "interface": "GigabitEthernet0/1",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "GigabitEthernet0/2",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "GigabitEthernet0/3",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  }
+]
+
+*********************************show ip route**********************************
+[
+  {
+    "vrf": "",
+    "protocol": "S",
+    "type": "",
+    "network": "0.0.0.0",
+    "prefix_length": "0",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "10.103.171.1",
+    "nexthop_vrf": "",
+    "nexthop_if": "",
+    "uptime": "",
+    "flag": "*"
+  },
+  {
+    "vrf": "",
+    "protocol": "C",
+    "type": "",
+    "network": "10.103.171.0",
+    "prefix_length": "24",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "GigabitEthernet0/0",
+    "uptime": "",
+    "flag": ""
+  },
+  {
+    "vrf": "",
+    "protocol": "L",
+    "type": "",
+    "network": "10.103.171.71",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "GigabitEthernet0/0",
+    "uptime": "",
+    "flag": ""
+  }
+]
+
+**********************************show version**********************************
+[
+  {
+    "software_image": "VIOS-ADVENTERPRISEK9-M",
+    "version": "15.7(3)M3",
+    "release": "fc2",
+    "rommon": "Bootstrap",
+    "hostname": "LAB-R1",
+    "uptime": "1 week, 4 hours, 38 minutes",
+    "uptime_years": "",
+    "uptime_weeks": "1",
+    "uptime_days": "",
+    "uptime_hours": "4",
+    "uptime_minutes": "38",
+    "reload_reason": "Unknown reason",
+    "running_image": "/vios-adventerprisek9-m",
+    "hardware": [
+      "IOSv"
+    ],
+    "serial": [
+      "9COSM7L8QIK71PTYC0CNZ"
+    ],
+    "config_register": "0x0",
+    "mac_address": [],
+    "restarted": ""
+  }
+]
+
+*********************************show inventory*********************************
+[
+  {
+    "name": "IOSv",
+    "descr": "IOSv chassis, Hw Serial#: 9COSM7L8QIK71PTYC0CNZ, Hw Revision: 1.0",
+    "pid": "IOSv",
+    "vid": "1.0",
+    "sn": "9COSM7L8QIK71PTYC0CNZ"
+  }
+]
+
+****************************************
+Connected to device: 10.103.171.72
+********************************show vlan brief*********************************
+[
+  {
+    "vlan_id": "1",
+    "vlan_name": "default",
+    "status": "active",
+    "interfaces": [
+      "Gi0/1",
+      "Gi0/2",
+      "Gi0/3",
+      "Gi1/0",
+      "Gi1/1",
+      "Gi1/2",
+      "Gi1/3"
+    ]
+  },
+  {
+    "vlan_id": "1002",
+    "vlan_name": "fddi-default",
+    "status": "act/unsup",
+    "interfaces": []
+  },
+  {
+    "vlan_id": "1003",
+    "vlan_name": "token-ring-default",
+    "status": "act/unsup",
+    "interfaces": []
+  },
+  {
+    "vlan_id": "1004",
+    "vlan_name": "fddinet-default",
+    "status": "act/unsup",
+    "interfaces": []
+  },
+  {
+    "vlan_id": "1005",
+    "vlan_name": "trnet-default",
+    "status": "act/unsup",
+    "interfaces": []
+  }
+]
+
+**********************************show version**********************************
+[
+  {
+    "software_image": "",
+    "version": "",
+    "release": "",
+    "rommon": "Bootstrap",
+    "hostname": "LAB-SW1",
+    "uptime": "1 week, 4 hours, 34 minutes",
+    "uptime_years": "",
+    "uptime_weeks": "1",
+    "uptime_days": "",
+    "uptime_hours": "4",
+    "uptime_minutes": "34",
+    "reload_reason": "Unknown reason",
+    "running_image": "/vios_l2-adventerprisek9-m",
+    "hardware": [
+      "IOSv"
+    ],
+    "serial": [
+      "9VRIM18P28O"
+    ],
+    "config_register": "0x101",
+    "mac_address": [],
+    "restarted": ""
+  }
+]
+
+*********************************show inventory*********************************
+
+
+*****************************show interfaces status*****************************
+[
+  {
+    "port": "Gi0/0",
+    "name": "",
+    "status": "connected",
+    "vlan_id": "routed",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi0/1",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi0/2",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi0/3",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi1/0",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi1/1",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi1/2",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  },
+  {
+    "port": "Gi1/3",
+    "name": "",
+    "status": "notconnect",
+    "vlan_id": "1",
+    "duplex": "a-full",
+    "speed": "auto",
+    "type": "RJ45",
+    "fc_mode": ""
+  }
+]
+
+****************************************
+Connected to device: 10.103.171.62
+**********************************show version**********************************
+[
+  {
+    "software_image": "X86_64_LINUX_IOSD-UNIVERSALK9-M",
+    "version": "16.4.1",
+    "release": "fc2",
+    "rommon": "IOS-XE",
+    "hostname": "CSR2",
+    "uptime": "1 week, 3 hours, 56 minutes",
+    "uptime_years": "",
+    "uptime_weeks": "1",
+    "uptime_days": "",
+    "uptime_hours": "3",
+    "uptime_minutes": "56",
+    "reload_reason": "reload",
+    "running_image": "packages.conf",
+    "hardware": [
+      "CSR1000V"
+    ],
+    "serial": [
+      "9S666XFYZY6"
+    ],
+    "config_register": "0x2102",
+    "mac_address": [],
+    "restarted": ""
+  }
+]
+
+*******************************show ip int brief********************************
+[
+  {
+    "interface": "GigabitEthernet1",
+    "ip_address": "10.103.171.62",
+    "status": "up",
+    "proto": "up"
+  },
+  {
+    "interface": "GigabitEthernet2",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "GigabitEthernet3",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  },
+  {
+    "interface": "GigabitEthernet4",
+    "ip_address": "unassigned",
+    "status": "administratively down",
+    "proto": "down"
+  }
+]
+
+*********************************show ip route**********************************
+[
+  {
+    "vrf": "",
+    "protocol": "S",
+    "type": "",
+    "network": "0.0.0.0",
+    "prefix_length": "0",
+    "distance": "1",
+    "metric": "0",
+    "nexthop_ip": "10.103.171.1",
+    "nexthop_vrf": "",
+    "nexthop_if": "",
+    "uptime": "",
+    "flag": "*"
+  },
+  {
+    "vrf": "",
+    "protocol": "C",
+    "type": "",
+    "network": "10.103.171.0",
+    "prefix_length": "24",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "GigabitEthernet1",
+    "uptime": "",
+    "flag": ""
+  },
+  {
+    "vrf": "",
+    "protocol": "L",
+    "type": "",
+    "network": "10.103.171.62",
+    "prefix_length": "32",
+    "distance": "",
+    "metric": "",
+    "nexthop_ip": "",
+    "nexthop_vrf": "",
+    "nexthop_if": "GigabitEthernet1",
+    "uptime": "",
+    "flag": ""
+  }
+]
+
+*********************************show inventory*********************************
+[
+  {
+    "name": "Chassis",
+    "descr": "Cisco CSR1000V Chassis",
+    "pid": "CSR1000V",
+    "vid": "V00  ",
+    "sn": "9S666XFYZY6"
+  },
+  {
+    "name": "module R0",
+    "descr": "Cisco CSR1000V Route Processor",
+    "pid": "CSR1000V",
+    "vid": "V00  ",
+    "sn": "JAB1303001C"
+  },
+  {
+    "name": "module F0",
+    "descr": "Cisco CSR1000V Embedded Services Processor",
+    "pid": "CSR1000V",
+    "vid": "",
+    "sn": ""
+  }
+]
+
+********************************show interfaces*********************************
+[
+  {
+    "interface": "GigabitEthernet1",
+    "link_status": "up",
+    "protocol_status": "up",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000b.0000",
+    "bia": "5000.000b.0000",
+    "description": "",
+    "ip_address": "10.103.171.62",
+    "prefix_length": "24",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "00:00:27",
+    "last_output": "00:22:29",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "560428",
+    "output_packets": "7126",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  },
+  {
+    "interface": "GigabitEthernet2",
+    "link_status": "administratively down",
+    "protocol_status": "down",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000b.0001",
+    "bia": "5000.000b.0001",
+    "description": "",
+    "ip_address": "",
+    "prefix_length": "",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "never",
+    "last_output": "never",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  },
+  {
+    "interface": "GigabitEthernet3",
+    "link_status": "administratively down",
+    "protocol_status": "down",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000b.0002",
+    "bia": "5000.000b.0002",
+    "description": "",
+    "ip_address": "",
+    "prefix_length": "",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "never",
+    "last_output": "never",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  },
+  {
+    "interface": "GigabitEthernet4",
+    "link_status": "administratively down",
+    "protocol_status": "down",
+    "hardware_type": "CSR vNIC",
+    "mac_address": "5000.000b.0003",
+    "bia": "5000.000b.0003",
+    "description": "",
+    "ip_address": "",
+    "prefix_length": "",
+    "mtu": "1500",
+    "duplex": "Full Duplex",
+    "speed": "1000Mbps",
+    "media_type": "RJ45",
+    "bandwidth": "1000000 Kbit",
+    "delay": "10 usec",
+    "encapsulation": "ARPA",
+    "last_input": "never",
+    "last_output": "never",
+    "last_output_hang": "never",
+    "queue_strategy": "fifo",
+    "input_rate": "0",
+    "output_rate": "0",
+    "input_pps": "0",
+    "output_pps": "0",
+    "input_packets": "0",
+    "output_packets": "0",
+    "runts": "0",
+    "giants": "0",
+    "input_errors": "0",
+    "crc": "0",
+    "frame": "0",
+    "overrun": "0",
+    "abort": "",
+    "output_errors": "0",
+    "vlan_id": "",
+    "vlan_id_inner": "",
+    "vlan_id_outer": "",
+    "queue_size": "0",
+    "queue_max": "375",
+    "queue_drops": "0",
+    "queue_flushes": "0",
+    "queue_output_drops": "0"
+  }
+]
+
+****************************************
+Connected to device: 10.103.171.68
 **********************************show version**********************************
 [
   {
@@ -8,12 +591,12 @@ Connecting to the device: 10.103.171.68
     "release": "fc2",
     "rommon": "IOS-XE",
     "hostname": "LAB-CSR-1",
-    "uptime": "1 week, 4 hours, 18 minutes",
+    "uptime": "1 week, 4 hours, 35 minutes",
     "uptime_years": "",
     "uptime_weeks": "1",
     "uptime_days": "",
     "uptime_hours": "4",
-    "uptime_minutes": "18",
+    "uptime_minutes": "35",
     "reload_reason": "reload",
     "running_image": "packages.conf",
     "hardware": [
@@ -166,16 +749,16 @@ Connecting to the device: 10.103.171.68
     "bandwidth": "1000000 Kbit",
     "delay": "10 usec",
     "encapsulation": "ARPA",
-    "last_input": "00:00:11",
-    "last_output": "00:08:58",
+    "last_input": "00:00:27",
+    "last_output": "00:25:43",
     "last_output_hang": "never",
     "queue_strategy": "fifo",
     "input_rate": "1000",
     "output_rate": "1000",
     "input_pps": "1",
     "output_pps": "1",
-    "input_packets": "563835",
-    "output_packets": "8124",
+    "input_packets": "564572",
+    "output_packets": "8859",
     "runts": "0",
     "giants": "0",
     "input_errors": "0",
@@ -372,590 +955,7 @@ Connecting to the device: 10.103.171.68
 ]
 
 ****************************************
-Connecting to the device: 10.103.171.62
-**********************************show version**********************************
-[
-  {
-    "software_image": "X86_64_LINUX_IOSD-UNIVERSALK9-M",
-    "version": "16.4.1",
-    "release": "fc2",
-    "rommon": "IOS-XE",
-    "hostname": "CSR2",
-    "uptime": "1 week, 3 hours, 39 minutes",
-    "uptime_years": "",
-    "uptime_weeks": "1",
-    "uptime_days": "",
-    "uptime_hours": "3",
-    "uptime_minutes": "39",
-    "reload_reason": "reload",
-    "running_image": "packages.conf",
-    "hardware": [
-      "CSR1000V"
-    ],
-    "serial": [
-      "9S666XFYZY6"
-    ],
-    "config_register": "0x2102",
-    "mac_address": [],
-    "restarted": ""
-  }
-]
-
-*******************************show ip int brief********************************
-[
-  {
-    "interface": "GigabitEthernet1",
-    "ip_address": "10.103.171.62",
-    "status": "up",
-    "proto": "up"
-  },
-  {
-    "interface": "GigabitEthernet2",
-    "ip_address": "unassigned",
-    "status": "administratively down",
-    "proto": "down"
-  },
-  {
-    "interface": "GigabitEthernet3",
-    "ip_address": "unassigned",
-    "status": "administratively down",
-    "proto": "down"
-  },
-  {
-    "interface": "GigabitEthernet4",
-    "ip_address": "unassigned",
-    "status": "administratively down",
-    "proto": "down"
-  }
-]
-
-*********************************show ip route**********************************
-[
-  {
-    "vrf": "",
-    "protocol": "S",
-    "type": "",
-    "network": "0.0.0.0",
-    "prefix_length": "0",
-    "distance": "1",
-    "metric": "0",
-    "nexthop_ip": "10.103.171.1",
-    "nexthop_vrf": "",
-    "nexthop_if": "",
-    "uptime": "",
-    "flag": "*"
-  },
-  {
-    "vrf": "",
-    "protocol": "C",
-    "type": "",
-    "network": "10.103.171.0",
-    "prefix_length": "24",
-    "distance": "",
-    "metric": "",
-    "nexthop_ip": "",
-    "nexthop_vrf": "",
-    "nexthop_if": "GigabitEthernet1",
-    "uptime": "",
-    "flag": ""
-  },
-  {
-    "vrf": "",
-    "protocol": "L",
-    "type": "",
-    "network": "10.103.171.62",
-    "prefix_length": "32",
-    "distance": "",
-    "metric": "",
-    "nexthop_ip": "",
-    "nexthop_vrf": "",
-    "nexthop_if": "GigabitEthernet1",
-    "uptime": "",
-    "flag": ""
-  }
-]
-
-*********************************show inventory*********************************
-[
-  {
-    "name": "Chassis",
-    "descr": "Cisco CSR1000V Chassis",
-    "pid": "CSR1000V",
-    "vid": "V00  ",
-    "sn": "9S666XFYZY6"
-  },
-  {
-    "name": "module R0",
-    "descr": "Cisco CSR1000V Route Processor",
-    "pid": "CSR1000V",
-    "vid": "V00  ",
-    "sn": "JAB1303001C"
-  },
-  {
-    "name": "module F0",
-    "descr": "Cisco CSR1000V Embedded Services Processor",
-    "pid": "CSR1000V",
-    "vid": "",
-    "sn": ""
-  }
-]
-
-********************************show interfaces*********************************
-[
-  {
-    "interface": "GigabitEthernet1",
-    "link_status": "up",
-    "protocol_status": "up",
-    "hardware_type": "CSR vNIC",
-    "mac_address": "5000.000b.0000",
-    "bia": "5000.000b.0000",
-    "description": "",
-    "ip_address": "10.103.171.62",
-    "prefix_length": "24",
-    "mtu": "1500",
-    "duplex": "Full Duplex",
-    "speed": "1000Mbps",
-    "media_type": "RJ45",
-    "bandwidth": "1000000 Kbit",
-    "delay": "10 usec",
-    "encapsulation": "ARPA",
-    "last_input": "00:00:14",
-    "last_output": "00:05:47",
-    "last_output_hang": "never",
-    "queue_strategy": "fifo",
-    "input_rate": "0",
-    "output_rate": "0",
-    "input_pps": "0",
-    "output_pps": "0",
-    "input_packets": "559668",
-    "output_packets": "6409",
-    "runts": "0",
-    "giants": "0",
-    "input_errors": "0",
-    "crc": "0",
-    "frame": "0",
-    "overrun": "0",
-    "abort": "",
-    "output_errors": "0",
-    "vlan_id": "",
-    "vlan_id_inner": "",
-    "vlan_id_outer": "",
-    "queue_size": "1",
-    "queue_max": "375",
-    "queue_drops": "0",
-    "queue_flushes": "0",
-    "queue_output_drops": "0"
-  },
-  {
-    "interface": "GigabitEthernet2",
-    "link_status": "administratively down",
-    "protocol_status": "down",
-    "hardware_type": "CSR vNIC",
-    "mac_address": "5000.000b.0001",
-    "bia": "5000.000b.0001",
-    "description": "",
-    "ip_address": "",
-    "prefix_length": "",
-    "mtu": "1500",
-    "duplex": "Full Duplex",
-    "speed": "1000Mbps",
-    "media_type": "RJ45",
-    "bandwidth": "1000000 Kbit",
-    "delay": "10 usec",
-    "encapsulation": "ARPA",
-    "last_input": "never",
-    "last_output": "never",
-    "last_output_hang": "never",
-    "queue_strategy": "fifo",
-    "input_rate": "0",
-    "output_rate": "0",
-    "input_pps": "0",
-    "output_pps": "0",
-    "input_packets": "0",
-    "output_packets": "0",
-    "runts": "0",
-    "giants": "0",
-    "input_errors": "0",
-    "crc": "0",
-    "frame": "0",
-    "overrun": "0",
-    "abort": "",
-    "output_errors": "0",
-    "vlan_id": "",
-    "vlan_id_inner": "",
-    "vlan_id_outer": "",
-    "queue_size": "0",
-    "queue_max": "375",
-    "queue_drops": "0",
-    "queue_flushes": "0",
-    "queue_output_drops": "0"
-  },
-  {
-    "interface": "GigabitEthernet3",
-    "link_status": "administratively down",
-    "protocol_status": "down",
-    "hardware_type": "CSR vNIC",
-    "mac_address": "5000.000b.0002",
-    "bia": "5000.000b.0002",
-    "description": "",
-    "ip_address": "",
-    "prefix_length": "",
-    "mtu": "1500",
-    "duplex": "Full Duplex",
-    "speed": "1000Mbps",
-    "media_type": "RJ45",
-    "bandwidth": "1000000 Kbit",
-    "delay": "10 usec",
-    "encapsulation": "ARPA",
-    "last_input": "never",
-    "last_output": "never",
-    "last_output_hang": "never",
-    "queue_strategy": "fifo",
-    "input_rate": "0",
-    "output_rate": "0",
-    "input_pps": "0",
-    "output_pps": "0",
-    "input_packets": "0",
-    "output_packets": "0",
-    "runts": "0",
-    "giants": "0",
-    "input_errors": "0",
-    "crc": "0",
-    "frame": "0",
-    "overrun": "0",
-    "abort": "",
-    "output_errors": "0",
-    "vlan_id": "",
-    "vlan_id_inner": "",
-    "vlan_id_outer": "",
-    "queue_size": "0",
-    "queue_max": "375",
-    "queue_drops": "0",
-    "queue_flushes": "0",
-    "queue_output_drops": "0"
-  },
-  {
-    "interface": "GigabitEthernet4",
-    "link_status": "administratively down",
-    "protocol_status": "down",
-    "hardware_type": "CSR vNIC",
-    "mac_address": "5000.000b.0003",
-    "bia": "5000.000b.0003",
-    "description": "",
-    "ip_address": "",
-    "prefix_length": "",
-    "mtu": "1500",
-    "duplex": "Full Duplex",
-    "speed": "1000Mbps",
-    "media_type": "RJ45",
-    "bandwidth": "1000000 Kbit",
-    "delay": "10 usec",
-    "encapsulation": "ARPA",
-    "last_input": "never",
-    "last_output": "never",
-    "last_output_hang": "never",
-    "queue_strategy": "fifo",
-    "input_rate": "0",
-    "output_rate": "0",
-    "input_pps": "0",
-    "output_pps": "0",
-    "input_packets": "0",
-    "output_packets": "0",
-    "runts": "0",
-    "giants": "0",
-    "input_errors": "0",
-    "crc": "0",
-    "frame": "0",
-    "overrun": "0",
-    "abort": "",
-    "output_errors": "0",
-    "vlan_id": "",
-    "vlan_id_inner": "",
-    "vlan_id_outer": "",
-    "queue_size": "0",
-    "queue_max": "375",
-    "queue_drops": "0",
-    "queue_flushes": "0",
-    "queue_output_drops": "0"
-  }
-]
-
-****************************************
-Connecting to the device: 10.103.171.71
-****************************show ip interface brief*****************************
-[
-  {
-    "interface": "GigabitEthernet0/0",
-    "ip_address": "10.103.171.71",
-    "status": "up",
-    "proto": "up"
-  },
-  {
-    "interface": "GigabitEthernet0/1",
-    "ip_address": "unassigned",
-    "status": "administratively down",
-    "proto": "down"
-  },
-  {
-    "interface": "GigabitEthernet0/2",
-    "ip_address": "unassigned",
-    "status": "administratively down",
-    "proto": "down"
-  },
-  {
-    "interface": "GigabitEthernet0/3",
-    "ip_address": "unassigned",
-    "status": "administratively down",
-    "proto": "down"
-  }
-]
-
-*********************************show ip route**********************************
-[
-  {
-    "vrf": "",
-    "protocol": "S",
-    "type": "",
-    "network": "0.0.0.0",
-    "prefix_length": "0",
-    "distance": "1",
-    "metric": "0",
-    "nexthop_ip": "10.103.171.1",
-    "nexthop_vrf": "",
-    "nexthop_if": "",
-    "uptime": "",
-    "flag": "*"
-  },
-  {
-    "vrf": "",
-    "protocol": "C",
-    "type": "",
-    "network": "10.103.171.0",
-    "prefix_length": "24",
-    "distance": "",
-    "metric": "",
-    "nexthop_ip": "",
-    "nexthop_vrf": "",
-    "nexthop_if": "GigabitEthernet0/0",
-    "uptime": "",
-    "flag": ""
-  },
-  {
-    "vrf": "",
-    "protocol": "L",
-    "type": "",
-    "network": "10.103.171.71",
-    "prefix_length": "32",
-    "distance": "",
-    "metric": "",
-    "nexthop_ip": "",
-    "nexthop_vrf": "",
-    "nexthop_if": "GigabitEthernet0/0",
-    "uptime": "",
-    "flag": ""
-  }
-]
-
-**********************************show version**********************************
-[
-  {
-    "software_image": "VIOS-ADVENTERPRISEK9-M",
-    "version": "15.7(3)M3",
-    "release": "fc2",
-    "rommon": "Bootstrap",
-    "hostname": "LAB-R1",
-    "uptime": "1 week, 4 hours, 21 minutes",
-    "uptime_years": "",
-    "uptime_weeks": "1",
-    "uptime_days": "",
-    "uptime_hours": "4",
-    "uptime_minutes": "21",
-    "reload_reason": "Unknown reason",
-    "running_image": "/vios-adventerprisek9-m",
-    "hardware": [
-      "IOSv"
-    ],
-    "serial": [
-      "9COSM7L8QIK71PTYC0CNZ"
-    ],
-    "config_register": "0x0",
-    "mac_address": [],
-    "restarted": ""
-  }
-]
-
-*********************************show inventory*********************************
-[
-  {
-    "name": "IOSv",
-    "descr": "IOSv chassis, Hw Serial#: 9COSM7L8QIK71PTYC0CNZ, Hw Revision: 1.0",
-    "pid": "IOSv",
-    "vid": "1.0",
-    "sn": "9COSM7L8QIK71PTYC0CNZ"
-  }
-]
-
-****************************************
-Connecting to the device: 10.103.171.72
-********************************show vlan brief*********************************
-[
-  {
-    "vlan_id": "1",
-    "vlan_name": "default",
-    "status": "active",
-    "interfaces": [
-      "Gi0/1",
-      "Gi0/2",
-      "Gi0/3",
-      "Gi1/0",
-      "Gi1/1",
-      "Gi1/2",
-      "Gi1/3"
-    ]
-  },
-  {
-    "vlan_id": "1002",
-    "vlan_name": "fddi-default",
-    "status": "act/unsup",
-    "interfaces": []
-  },
-  {
-    "vlan_id": "1003",
-    "vlan_name": "token-ring-default",
-    "status": "act/unsup",
-    "interfaces": []
-  },
-  {
-    "vlan_id": "1004",
-    "vlan_name": "fddinet-default",
-    "status": "act/unsup",
-    "interfaces": []
-  },
-  {
-    "vlan_id": "1005",
-    "vlan_name": "trnet-default",
-    "status": "act/unsup",
-    "interfaces": []
-  }
-]
-
-**********************************show version**********************************
-[
-  {
-    "software_image": "",
-    "version": "",
-    "release": "",
-    "rommon": "Bootstrap",
-    "hostname": "LAB-SW1",
-    "uptime": "1 week, 4 hours, 18 minutes",
-    "uptime_years": "",
-    "uptime_weeks": "1",
-    "uptime_days": "",
-    "uptime_hours": "4",
-    "uptime_minutes": "18",
-    "reload_reason": "Unknown reason",
-    "running_image": "/vios_l2-adventerprisek9-m",
-    "hardware": [
-      "IOSv"
-    ],
-    "serial": [
-      "9VRIM18P28O"
-    ],
-    "config_register": "0x101",
-    "mac_address": [],
-    "restarted": ""
-  }
-]
-
-*********************************show inventory*********************************
-
-
-*****************************show interfaces status*****************************
-[
-  {
-    "port": "Gi0/0",
-    "name": "",
-    "status": "connected",
-    "vlan_id": "routed",
-    "duplex": "a-full",
-    "speed": "auto",
-    "type": "RJ45",
-    "fc_mode": ""
-  },
-  {
-    "port": "Gi0/1",
-    "name": "",
-    "status": "notconnect",
-    "vlan_id": "1",
-    "duplex": "a-full",
-    "speed": "auto",
-    "type": "RJ45",
-    "fc_mode": ""
-  },
-  {
-    "port": "Gi0/2",
-    "name": "",
-    "status": "notconnect",
-    "vlan_id": "1",
-    "duplex": "a-full",
-    "speed": "auto",
-    "type": "RJ45",
-    "fc_mode": ""
-  },
-  {
-    "port": "Gi0/3",
-    "name": "",
-    "status": "notconnect",
-    "vlan_id": "1",
-    "duplex": "a-full",
-    "speed": "auto",
-    "type": "RJ45",
-    "fc_mode": ""
-  },
-  {
-    "port": "Gi1/0",
-    "name": "",
-    "status": "notconnect",
-    "vlan_id": "1",
-    "duplex": "a-full",
-    "speed": "auto",
-    "type": "RJ45",
-    "fc_mode": ""
-  },
-  {
-    "port": "Gi1/1",
-    "name": "",
-    "status": "notconnect",
-    "vlan_id": "1",
-    "duplex": "a-full",
-    "speed": "auto",
-    "type": "RJ45",
-    "fc_mode": ""
-  },
-  {
-    "port": "Gi1/2",
-    "name": "",
-    "status": "notconnect",
-    "vlan_id": "1",
-    "duplex": "a-full",
-    "speed": "auto",
-    "type": "RJ45",
-    "fc_mode": ""
-  },
-  {
-    "port": "Gi1/3",
-    "name": "",
-    "status": "notconnect",
-    "vlan_id": "1",
-    "duplex": "a-full",
-    "speed": "auto",
-    "type": "RJ45",
-    "fc_mode": ""
-  }
-]
-
-****************************************
-Connecting to the device: 10.103.171.77
+Connected to device: 10.103.171.77
 ******************************show interface e1/1*******************************
 [
   {
@@ -979,7 +979,7 @@ Connecting to the device: 10.103.171.77
     "bandwidth": "1000000 Kbit",
     "delay": "10 usec",
     "encapsulation": "ARPA",
-    "last_link_flapped": "23:00:55",
+    "last_link_flapped": "23:17:30",
     "vlan_id": "",
     "packet_input_rate": "0",
     "packet_output_rate": "0",
@@ -2295,7 +2295,7 @@ Connecting to the device: 10.103.171.77
 **********************************show version**********************************
 [
   {
-    "uptime": "0 day(s), 23 hour(s), 4 minute(s), 5 second(s)",
+    "uptime": "0 day(s), 23 hour(s), 20 minute(s), 42 second(s)",
     "last_reboot_reason": "Unknown",
     "bios": "",
     "os": "7.0(3)I7(10)",
@@ -2346,12 +2346,12 @@ Connecting to the device: 10.103.171.77
 ]
 
 ****************************************
-Connecting to the device: sandbox-iosxr-1.cisco.com
+Connected to device: sandbox-iosxr-1.cisco.com
 **********************************show version**********************************
 [
   {
     "version": "7.3.2",
-    "uptime": "22 hours 39 minutes",
+    "uptime": "22 hours 56 minutes",
     "location": "/opt/cisco/XR/packages/",
     "hardware": "IOS-XRv 9000",
     "build_host": "iox-ucs-017",
@@ -2466,7 +2466,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "via",
     "next_hop": "10.10.20.254",
     "interface": "",
-    "uptime": "22:38:14"
+    "uptime": "22:54:49"
   },
   {
     "vrf": "",
@@ -2478,7 +2478,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "via",
     "next_hop": "10.10.20.254",
     "interface": "MgmtEth0/RP0/CPU0/0",
-    "uptime": "22:38:14"
+    "uptime": "22:54:49"
   },
   {
     "vrf": "",
@@ -2490,7 +2490,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "MgmtEth0/RP0/CPU0/0",
-    "uptime": "22:38:14"
+    "uptime": "22:54:49"
   },
   {
     "vrf": "",
@@ -2502,7 +2502,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "MgmtEth0/RP0/CPU0/0",
-    "uptime": "22:38:14"
+    "uptime": "22:54:49"
   },
   {
     "vrf": "",
@@ -2514,7 +2514,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback100",
-    "uptime": "03:47:55"
+    "uptime": "04:04:29"
   },
   {
     "vrf": "",
@@ -2526,7 +2526,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback421",
-    "uptime": "06:05:18"
+    "uptime": "06:21:52"
   },
   {
     "vrf": "",
@@ -2538,7 +2538,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback421",
-    "uptime": "06:05:18"
+    "uptime": "06:21:52"
   },
   {
     "vrf": "",
@@ -2550,7 +2550,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback44",
-    "uptime": "13:38:12"
+    "uptime": "13:54:46"
   },
   {
     "vrf": "",
@@ -2562,7 +2562,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback44",
-    "uptime": "13:38:12"
+    "uptime": "13:54:46"
   },
   {
     "vrf": "",
@@ -2574,7 +2574,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback66",
-    "uptime": "13:38:24"
+    "uptime": "13:54:58"
   },
   {
     "vrf": "",
@@ -2586,7 +2586,7 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "type": "directly",
     "next_hop": "connected",
     "interface": "Loopback66",
-    "uptime": "13:38:24"
+    "uptime": "13:54:58"
   }
 ]
 
@@ -2882,12 +2882,12 @@ Connecting to the device: sandbox-iosxr-1.cisco.com
     "vlan_id": "",
     "last_input": "00:00:00",
     "last_output": "00:00:00",
-    "input_rate": "1000",
-    "output_rate": "2000",
-    "input_pps": "2",
-    "output_pps": "1",
-    "input_packets": "81604",
-    "output_packets": "61474",
+    "input_rate": "2000",
+    "output_rate": "3000",
+    "input_pps": "3",
+    "output_pps": "2",
+    "input_packets": "83895",
+    "output_packets": "62982",
     "runts": "0",
     "giants": "0",
     "input_errors": "0",
