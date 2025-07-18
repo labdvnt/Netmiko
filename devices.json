@@ -3,43 +3,52 @@
         "ip": "10.103.171.68", 
         "port": 22,
         "username": "admin", 
-        "password": "1234QWer!", 
+        "password": "Admin123", 
         "device_type": "cisco_xe",
-        "secret": "1234QWer!",
+        "secret": "Admin123",
         "model_type": "asr_9000"
     },
     {
         "ip": "10.103.171.62", 
         "port": 22,
         "username": "admin", 
-        "password": "1234QWer!", 
-        "device_type": "cisco_xe",
-        "secret": "1234QWer!",
-        "model_type": "asr_9000"
-    },
-    {
-        "ip": "10.103.171.71", 
-        "port": 22,
-        "username": "admin", 
-        "password": "1234QWer!", 
-        "device_type": "cisco_ios", 
-        "secret": "1234QWer!",
+        "password": "Admin123", 
+        "device_type": "cisco_ios",
+        "secret": "Admin123",
         "model_type": "cisco_3725"
     },
     {
-        "ip": "10.103.171.72", 
+        "ip": "10.103.171.67", 
         "port": 22,
         "username": "admin", 
-        "password": "1234QWer!", 
+        "password": "Admin123", 
         "device_type": "cisco_ios", 
-        "secret": "1234QWer!",
+        "secret": "Admin123",
         "model_type": "cisco_2960"
     },
     {
-        "ip": "10.103.171.77", 
+        "ip": "10.103.171.63", 
         "port": 22,
         "username": "admin", 
-        "password": "1234QWer!", 
+        "password": "Admin123", 
+        "device_type": "cisco_ios", 
+        "secret": "Admin123",
+        "model_type": "cisco_2960"
+    },
+    {
+        "ip": "10.103.171.66", 
+        "port": 22,
+        "username": "admin", 
+        "password": "Admin123", 
+        "device_type": "cisco_ios", 
+        "secret": "Admin123",
+        "model_type": "cisco_2960"
+    },
+    {
+        "ip": "10.103.171.84", 
+        "port": 22,
+        "username": "admin", 
+        "password": "Admin123", 
         "device_type": "cisco_nxos", 
         "model_type": "nexus_9000"
     },

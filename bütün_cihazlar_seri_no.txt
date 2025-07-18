@@ -1,0 +1,7 @@
+10.103.171.68 : cisco_xe : 9IMDFR9GW2Q
+10.103.171.67 : cisco_ios : 9ZGOGUCHENDUGXBV5E8KY
+10.103.171.63 : cisco_ios : 9G6NRZI1FZ7
+10.103.171.66 : cisco_ios : 9HNEK4XZXTB00ALKSPS73
+10.103.171.62 : cisco_ios : 94J10SOR2FD
+10.103.171.84 : cisco_nxos : 9WCE8ZSCIUL
+sandbox-iosxr-1.cisco.com : cisco_xr : 86E4A261046
